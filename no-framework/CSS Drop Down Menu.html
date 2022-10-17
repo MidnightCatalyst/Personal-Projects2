@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel = "stylesheet" href = "DropDownStyling.css">
+
+
+
+
+<style>
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: cover;
+    color: black;
+    background-position: center;
+    box-sizing: border-box;
+    
+    
+}
+.menu-bar{
+    background: rgb(79, 175, 79);
+    text-align: left;
+    
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+    
+}
+.menu-bar ul li{
+    width: 65px;
+    margin: 2px;
+    padding: 5px;
+    
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+
+} 
+
+.sublistforFile{
+    display: none;
+}
+.menu-bar ul li:hover .sublistforFile{
+    display: block;
+    position: absolute;
+    background: rgb(79, 175, 79);
+
+    
+}
+.menu-bar ul li:hover .sublistforFile ul{
+    display: block;
+    margin: 9px;
+   
+
+    
+}
+.menu-bar ul li:hover .sublistforFile ul li a{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10;
+    text-align: right;
+    color: rgb(22, 9, 86);
+    
+}
+
+.menu-bar ul li:hover .sublistforFile ul li a:hover{
+    
+    background-color: rgb(144, 247, 146);
+    width: 150px;
+    padding: 10px;
+}
+
+
+.Ex1{
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    flex-basis: 99%;
+    border: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-left: 5px solid rgb(59, 151, 59);
+
+}
+
+.Ex2{
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    flex-basis: 99%;
+    border: 10px;
+    margin-bottom: 1rem;
+    padding: 20px 12 px;
+    box-sizing: border-box;
+    width:80%;
+    margin: auto;
+    padding-top: 10px;
+    border-left: 5px solid rgb(222, 211, 6);
+}
+
+html {
+    background-color: rgb(226, 255, 226);
+    }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+    
+</head>
+
+<body>
+    
+    <nav>
+    <div class = "menu-bar">
+    <ul>
+    
+<li><a href = "#"><b>File</b></a>
+<div class = "sublistforFile">
+    <ul>
+    <li><a href = "#">New</a></li>
+    <li><a href = "#">Open</a></li>
+    <li><a href = "#">Save</a></li>
+    <li><a href = "#">Print</a></li>
+    <li><a href = "#">Close</a></li>
+    </ul>
+</div>
+</li>
+<li><a href = "#">Edit</a>
+    <div class = "sublistforFile">
+        <ul>
+                <li><a href = "#">Undo</a></li>
+                <li><a href = "#">Redo</a></li>
+                <li><a href = "#">Cut</a></li>
+                <li><a href = "#">Copy</a></li>
+                <li><a href = "#">Paste</a></li>
+                <li><a href = "#">Delete</a></li>
+                <li><a href = "#">Select All</a></li>
+        </ul>
+    </div>
+</li>
+<li><a href = "#"><b>View</b></a>
+    <div class = "sublistforFile">
+        <ul>
+                <li><a href = "#">Zoom in</a></li>
+                <li><a href = "#">Zoom out</a></li>
+                <li><a href = "#">Actual Size</a></li>
+                <li><a href = "#">Fit Page</a></li>
+                <li><a href = "#">Fit Width</a></li>
+                <li><a href = "#">Fit Height</a></li>
+                <li><a href = "#">Select All</a></li>
+                <li><a href = "#">Rotate Left</a></li>
+                <li><a href = "#">Rotate Right</a></li>
+                <li><a href = "#">Full Screen</a></li>
+        </ul>
+    </div>
+</li>
+</div>
+<section>
+    <div class = "row">
+    <div class = "Ex1">
+        <h1><b>Instructions</b></h1>
+        
+        <p>Recreate this page using only CSS. Do yourself a favor and 1) Do not view the source. Figure it out yourself. 
+            2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
+        </div>
+        <hr>
+    
+    <div class = "row"></div>
+      <div class = "Ex2">
+      <h><b>Extra Credit</b></h1>
+        <p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for) </p>
+    </div>
+</section>
+</div>
+
+</body>
+</html>
