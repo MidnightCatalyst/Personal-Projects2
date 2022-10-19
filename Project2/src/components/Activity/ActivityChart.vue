@@ -1,5 +1,5 @@
 <script lang="ts" >
-import Chart from 'chart.js/auto';
+import Chart, { type ChartItem } from 'chart.js/auto';
 export default {
     mounted() {
         console.log('Component mounted.')
@@ -22,7 +22,7 @@ export default {
     hoverOffset: 4
   }]
 };
-        const myChart = new Chart(ctx, {type: 'doughnut', data: data,})
+        const myChart = new Chart(ctx as ChartItem, {type: 'doughnut', data: data,})
 
     }
 }

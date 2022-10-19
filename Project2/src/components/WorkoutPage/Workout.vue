@@ -45,7 +45,7 @@
       </thead>
       <tbody>
         <tr v-for="(entry, i) in sortedList" :key="i">
-          <th scope="row">{{ ++i }}</th>
+          <th scope="row">{{ i }}</th>
           <td>{{ entry.type }}</td>
           <td>{{ entry.sets }}</td>
           <td>{{ entry.reps }}</td>
@@ -55,10 +55,12 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang = "ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: "Leaderboard",
-  data: () => ({ type: "", sets: "", reps: "", allScores: [] }),
+  data: () => ({ type: "", sets: "", reps: "", allScores: [] as any[] }),
   computed: {
     sortedList: function() {
       return this.allScores.slice().sort(function(a, b) {
@@ -77,6 +79,6 @@ export default {
       this.reps = "";
     },
   },
-};
+});
 </script>
 

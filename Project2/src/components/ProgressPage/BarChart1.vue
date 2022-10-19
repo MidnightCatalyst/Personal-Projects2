@@ -16,7 +16,7 @@
     </header>
   </template>
   
-  <script>
+  <script lang = "ts">
   import { Bar } from 'vue-chartjs'
   import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
   
@@ -53,7 +53,7 @@
       plugins: {
         type: Object,
         default: () => {}
-      }
+      } as any,
     },
     data() {
       return {
