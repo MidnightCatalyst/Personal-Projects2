@@ -14,8 +14,6 @@
         <div class="navbar-brand">
           <router-link class = "navbar-item" to ="/">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5NBGsMsfY8bp9d8ie7jG-X5GXezDsvvyMA&usqp=CAU" width="112" height="28">
-            
-        
           </router-link>
           <a :class="{ 'is-active': isActive }" @click="isActive = !isActive" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>

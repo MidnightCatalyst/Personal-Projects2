@@ -5,7 +5,7 @@ import './Activity.scss'
 
 <template>
   <header>
-    <h2>Activity</h2>
+    <h2>Suggested Schedule For Begineers</h2>
   </header>
   <main>
     <div class = "container">
