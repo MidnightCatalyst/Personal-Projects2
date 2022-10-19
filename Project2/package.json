@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.2.0",
     "bulma": "^0.9.4",
+    "bulma-graphs": "^0.2.1",
     "chart.js": "^3.9.1",
     "pinia": "^2.0.21",
     "vue": "^3.2.38",

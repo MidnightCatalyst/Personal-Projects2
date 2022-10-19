@@ -8,3 +8,4 @@ import Activity from "../components/Activity/Activity.vue"
     <Activity />
   </main>
 </template>
+

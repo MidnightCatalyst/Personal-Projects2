@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Workout from "../components/WorkoutPage/Workout.vue"
+import Chart from "../components/ProgressPage/Chart.vue"
 
 </script>
 
 <template>
   <main>
-    <Workout />
+   <Chart />
   </main>
 </template>

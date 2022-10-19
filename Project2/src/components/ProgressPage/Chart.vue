@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import BarChart from "./ActivityChart.vue"
-import './Activity.scss'
+import BarChart from "./BarChart1.vue"
+import './Chart.scss'
 </script>
 
 <template>
   <header>
-    <h2>Activity</h2>
+    <h2>             Hours Spent | Pull Day</h2>
   </header>
   <main>
     <div class = "container">
@@ -15,4 +15,3 @@ import './Activity.scss'
   </main>
   
 </template>
-
