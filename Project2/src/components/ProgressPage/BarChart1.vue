@@ -11,9 +11,12 @@
       :width="width"
       :height="height"
     />
+    
     <header>
      
     </header>
+
+    
   </template>
   
   <script lang = "ts">
