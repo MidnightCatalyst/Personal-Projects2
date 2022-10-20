@@ -137,7 +137,7 @@ import Activity from "../components/Activity/Activity.vue"
         <p>
           <strong>Hanna Smith</strong> <small>@HannaSmith</small> <small>1h</small>
           <br>
-          Squated 225lbs today. Reached my max PR, feeling stronger!
+          Squated 225lbs today. Reached my max PR, feeling stronger! @Janisse You go girl :)
         </p>
       </div>
       <nav class="level is-mobile">
