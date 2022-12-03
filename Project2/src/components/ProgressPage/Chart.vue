@@ -9,7 +9,7 @@ import './Chart.scss'
     <div>
     <article class="panel is-info">
   <p class="panel-heading">
-    Hours Spent | (Pull Day)
+    Weight Tracker
   </p>
   <p class="panel-tabs">
   </p>
