@@ -81,3 +81,5 @@ import Workout from "../components/WorkoutPage/Workout.vue"
 
 
 </template>
+
+

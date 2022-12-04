@@ -8,3 +8,4 @@ import Chart from "../components/ProgressPage/Chart.vue"
    <Chart />
   </main>
 </template>
+

@@ -162,6 +162,13 @@ import Activity from "../components/Activity/Activity.vue"
     </div>
   </article>
 </div>
+
+
+
+
+
+
+
 </template>
 
 
