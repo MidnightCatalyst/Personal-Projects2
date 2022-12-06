@@ -1,10 +1,11 @@
 <template>
     <div>
-      <div class="text-center">You're now logged as</div>
+      <div class="text-center">Welcome, you are logged into </div>
       <div id="username_display" class="display-6">{{ this.email }}</div>
-      <button id="sign_out" class="mt-4 btn btn-danger" @click="signOut">
+      <button id="sign_out" class="mt-4 btn-pers" @click="signOut">
         Logout
       </button>
+
     </div>
   </template>
   
@@ -25,9 +26,9 @@
           .signOut()
           .then(() => {
             console.log("Sign Out completed");
-            this.$router.push("/");
+            this.$router.push("/Login");
           })
-          .catch((error) => console.log(error));
+          .catch((error) => console.log(error));    
       },
     },
   };

@@ -1,0 +1,63 @@
+### get all workouts from a user
+GET http://127.0.0.1:3003/api/v1/workouts/a
+
+### get one workout from a user
+GET http://127.0.0.1:3003/api/v1/workouts/a/1
+
+### get user by username
+GET http://127.0.0.1:3003/api/v1/users/d
+
+### get all users
+GET http://127.0.0.1:3003/api/v1/users
+
+### follow a user
+PATCH http://127.0.0.1:3003/api/v1/users/follow/v/b
+
+### unfollow a user
+PATCH http://127.0.0.1:3003/api/v1/users/unfollow/v/b
+
+### remove a workout from a user
+DELETE http://127.0.0.1:3003/api/v1/workouts/a/1
+
+
+### get list of users a user is following
+GET http://127.0.0.1:3003/api/v1/users/following/v
+
+### remove user
+DELETE http://127.0.0.1:3003/api/v1/users/c
+
+### create user
+POST http://127.0.0.1:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "username": "hello",
+    "password": "hello"
+}
+
+### login
+POST http://127.0.0.1:3003/api/v1/users/login
+Content-Type: application/json
+
+{
+    "username": "Welcome",
+    "password": "Welcome"
+}
+
+### add workout
+POST http://127.0.0.1:3003/api/v1/workouts/a
+Content-Type: application/json
+
+{
+    "wid": 5,
+    "name": "not a test anymore >:)",
+    "weight": 30,
+    "reps": 10,
+    "date": "2020-01-01"
+}
+
+### remove a workout
+DELETE http://127.0.0.1:3000/api/v1/workouts/a/1
+
+### seed database
+POST http://127.0.0.1:3000/api/v1/users/seed

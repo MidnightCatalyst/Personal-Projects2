@@ -26,6 +26,9 @@
         <button type="submit" class="mt-4 btn-pers" id="login_button">
           Login
         </button>
+
+
+        
         <div
           class="alert alert-warning alert-dismissible fade show mt-5 d-none"
           role="alert"
@@ -56,6 +59,8 @@
         signInWithEmailAndPassword(auth, this.email, this.password)
           .then(() => {
             this.$router.push("/dashboard");
+
+
           })
           .catch((error) => {
             const errorCode = error.code;
@@ -73,10 +78,13 @@
       },
     },
   };
+
+
+
+  
   </script>
 
   <style>
-/* CUSTOM STYLE */
 #content {
   position: absolute;
   top: 50%;
@@ -112,7 +120,7 @@
   margin-top: 6px;
   height: 38px !important;
 }
-/* From uiverse.io */
+
 .btn-pers {
   position: relative;
   left: 50%;
@@ -140,7 +148,7 @@
 .btn-pers:active {
   transform: translate(-50%, -1px);
 }
-/*  */
+
 .alternative-option {
   text-align: center;
 }

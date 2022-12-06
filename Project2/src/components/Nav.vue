@@ -1,7 +1,9 @@
 <script setup lang="ts">
     import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
-   
+    import DashboardView from './Login/DashBoardView.vue';
+    import LoginView from './Login/LoginView.vue';
+    
 
     let isActive = ref(false);
 
@@ -38,6 +40,18 @@
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
+
+           
+
+
+          
+            <router-link class="display-6" to="/dashboard">
+              <div class = input id = "username_display"> Hello User</div>
+
+            </router-link>
+
+
+
               <router-link class="navbar-item" to="/register">
               Sign Up
             </router-link>

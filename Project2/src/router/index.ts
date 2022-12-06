@@ -48,6 +48,7 @@ const router = createRouter({
 })
 
 
+
 router.beforeEach((to, from, next) => {
   const auth = getAuth();
 
@@ -55,7 +56,7 @@ router.beforeEach((to, from, next) => {
     if (auth.currentUser) {
       next();
     } else {
-      alert("You've must been logged to access this area");
+      alert("You Must Be Logged In To Access This Page/Profile");
       router.push("/Login");
     }
   } else {

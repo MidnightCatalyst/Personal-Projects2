@@ -8,7 +8,7 @@
         <a class="button is-primary">
             <strong>Sign up</strong>
         </a>
-        <a class="button is-light" @click="login('Christian', 'Collados')">
+        <a class="button is-light" @click="login('Christian', 'Collado')">
             Log in
         </a>
     </div>

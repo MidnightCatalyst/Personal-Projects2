@@ -8,7 +8,7 @@
             class="form-control"
             type="text"
             name="email"
-            placeholder="email@adress.com"
+            placeholder="Generated@gmail.com"
           />
         </div>
         <div class="input">
@@ -17,7 +17,7 @@
             class="form-control"
             type="password"
             name="password"
-            placeholder="password123"
+            placeholder="kiki34"
           />
         </div>
   
@@ -50,18 +50,18 @@
     },
     methods: {
       register(submitEvent) {
-        // data update
+        
         this.email = submitEvent.target.elements.email.value;
         this.password = submitEvent.target.elements.password.value;
   
-        // firebase registration
+       
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, this.email, this.password)
           .then((userCredential) => {
             const user = userCredential.user;
             console.log(user);
             console.log("Registration completed");
-            this.$router.push("/");
+            this.$router.push("/Login");
           })
           .catch((error) => {
             const errorCode = error.code;
