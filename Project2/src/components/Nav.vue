@@ -37,6 +37,10 @@
             <router-link class="navbar-item" to="/Tracker">
               Progress Tracker
             </router-link>
+
+            <router-link class="navbar-item" to="/Activity">
+              Activity Log
+            </router-link>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
@@ -73,6 +77,7 @@
         border-bottom: #00AA00 5px solid;
         
     }
+   
 </style> 
 
 
