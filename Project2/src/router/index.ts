@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import WorkoutViewVue from '@/views/WorkoutView.vue'
+import WorkoutViewVue from '/src/views/WorkoutView.vue'
 import TrackingViewVue from '@/views/TrackingView.vue'
 import LoginView from '/src/components/Login/LoginView.vue'
 import { getAuth } from "firebase/auth";

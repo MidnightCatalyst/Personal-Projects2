@@ -31,7 +31,7 @@
             </router-link>
       
             <router-link to="/workout" class ="navbar-item">
-              Workouts
+              Workout Log
             </router-link>
 
             <router-link class="navbar-item" to="/Tracker">

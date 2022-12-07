@@ -20,23 +20,7 @@ import Activity from "../components/Activity/Activity.vue"
     <Activity />    
   </main>
  
-  <div>
-    <article class="panel is-info">
-  <p class="panel-heading">
-    Activity Log
-  </p>
-
-  <p class="panel-tabs">
-  </p>
-  <div class="panel-block">
-    <p class="control has-icons-left">
-      <span class="icon is-left">
-        <i class="fas fa-search" aria-hidden="true"></i>
-      </span>
-    </p>
-  </div>
-</article>
-</div>
+  
 
 
 <!-- 

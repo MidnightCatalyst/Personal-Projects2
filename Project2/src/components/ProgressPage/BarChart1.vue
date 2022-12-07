@@ -75,7 +75,7 @@ watch(weights, (newWeights) => {
 
 		<div class="current">
 			<span>{{ currentWeight.weight }}</span>
-			<small>Current Weight (kg)</small>
+			<small>Weight Insertion lbs.</small>
 		</div>
 
 		<form @submit.prevent="addWeight">
@@ -103,7 +103,7 @@ watch(weights, (newWeights) => {
 				<h2>Weight History</h2>
 				<ul>
 					<li v-for="weight in weights">
-						<span>{{ weight.weight }}kg</span>
+						<span>{{ weight.weight }}lbs</span>
 						<small>
 							{{ new Date(weight.date).toLocaleDateString() }}
 						</small>

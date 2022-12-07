@@ -87,9 +87,7 @@ export default {
           <div class="avatar">
             <img :src="creator.avatar" alt="">
           </div>
-          <div class="username">
-            <a href="#">@{{ creator.user }}</a>
-          </div>
+          
         </div>
       </div>
       <comments 

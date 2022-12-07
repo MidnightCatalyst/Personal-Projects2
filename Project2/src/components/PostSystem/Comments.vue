@@ -16,8 +16,7 @@
                 type="text" 
                 v-model.trim="reply" 
                 class="reply--text" 
-                placeholder="Begin your journey by leaving a comment..."
-                maxlength="250"
+                placeholder="Begin Your Journey By Sharing Your Story!"
                 required
                 @keyup.enter="submitComment"
             />
