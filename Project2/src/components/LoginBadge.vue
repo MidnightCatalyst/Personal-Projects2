@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
     import session, { login, logout } from '../stores/session'
 
 </script>

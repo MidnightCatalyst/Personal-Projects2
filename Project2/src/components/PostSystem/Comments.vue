@@ -112,7 +112,7 @@ import singleComment from '/src/components/PostSystem/SingleComment.vue'
     padding: 10px 10px 10px 55px;
     margin-right: 10px;
     border: 0;
-    color: rgb(134, 12, 12);
+    color: rgb(17, 16, 16);
     width: 100%;
     outline: 0;
     background-color: transparent;
