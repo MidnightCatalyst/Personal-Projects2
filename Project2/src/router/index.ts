@@ -4,6 +4,7 @@ import WorkoutViewVue from '@/views/WorkoutView.vue'
 import TrackingViewVue from '@/views/TrackingView.vue'
 import LoginView from '/src/components/Login/LoginView.vue'
 import { getAuth } from "firebase/auth";
+import ActivityView from '@/views/ActivityView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/Tracker',
       name: 'Tracker',
       component: TrackingViewVue
+    },
+    {
+      path: '/Activity',
+      name: 'Activity Log',
+      component: ActivityView
     },
     {
       path: "/Login",

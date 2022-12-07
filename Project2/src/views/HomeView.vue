@@ -173,5 +173,3 @@ import Activity from "../components/Activity/Activity.vue"
 
 </template>
 
-
-
