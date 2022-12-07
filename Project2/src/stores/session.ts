@@ -1,23 +1,23 @@
-import { reactive } from "vue";
+// import { reactive } from "vue";
 
-const session = reactive( {
-    user: null as User | null,
-});
+// const session = reactive( {
+//     user: null as User | null,
+// });
 
-export function login(firstName: string, lastName: string) {
-    session.user = {
-        firstName,
-        lastName,
-    };
-}
+// export function login(firstName: string, lastName: string) {
+//     session.user = {
+//         firstName,
+//         lastName,
+//     };
+// }
 
-export function logout() {
-    session.user = null;
-}
+// export function logout() {
+//     session.user = null;
+// }
 
-export class User {
-    public firstName?: string;
-    public lastName?: string;
-}
+// export class User {
+//     public firstName?: string;
+//     public lastName?: string;
+// }
 
-export default session;
+// export default session;

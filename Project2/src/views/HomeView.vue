@@ -25,6 +25,7 @@ import Activity from "../components/Activity/Activity.vue"
   <p class="panel-heading">
     Activity Log
   </p>
+
   <p class="panel-tabs">
   </p>
   <div class="panel-block">
@@ -38,7 +39,7 @@ import Activity from "../components/Activity/Activity.vue"
 </div>
 
 
-
+<!-- 
 <div class="box">
   <article class="media">
     <div class="media-left">
@@ -164,7 +165,7 @@ import Activity from "../components/Activity/Activity.vue"
   </article>
 </div>
 
-
+ -->
 
 
 
