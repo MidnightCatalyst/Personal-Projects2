@@ -39,7 +39,7 @@
             </router-link>
 
             <router-link class="navbar-item" to="/Activity">
-              Activity Log
+              Activity Chat Log
             </router-link>
           </div>
           <div class="navbar-end">
