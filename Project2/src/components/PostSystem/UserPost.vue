@@ -17,7 +17,7 @@
 </script>
 
 <style scoped>
-/* Single-comment component */
+
 .comment {
     display: flex;
     padding: 10px;
