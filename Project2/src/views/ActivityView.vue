@@ -1,7 +1,7 @@
 <script>
 
 
-import Comments from '/src/components/PostSystem/Comments.vue'
+import Comments from '/src/components/PostSystem/ChatLog.vue'
 export default {
   name: 'app',
   components: {

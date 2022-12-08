@@ -20,13 +20,13 @@
                 required
                 @keyup.enter="submitComment"
             />
-            <button class="reply--button" @click.prevent="submitComment"><i class="fa fa-paper-plane"></i> Send</button>
+            <button class="reply--button" @click.prevent="submitComment"><i class="fa fa-paper-plane"></i> POST</button>
         </div>
     </div>
 </template>
 
 <script>
-import singleComment from '/src/components/PostSystem/SingleComment.vue'
+import singleComment from '/src/components/PostSystem/UserPost.vue'
     export default {
         name: 'comments',
         components: {

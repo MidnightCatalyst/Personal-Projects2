@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WorkoutViewVue from '/src/views/WorkoutView.vue'
 import TrackingViewVue from '@/views/TrackingView.vue'
-import LoginView from '/src/components/Login/LoginView.vue'
+import LoginView from '/src/components/Login/LoginSetup.vue'
 import { getAuth } from "firebase/auth";
 import ActivityView from '@/views/ActivityView.vue'
 
@@ -38,13 +38,13 @@ const router = createRouter({
       path: "/register",
       name: "register",
       component: () =>
-        import('/src/components/Login/RegisterView.vue'),
+        import('/src/components/Login/SignUpSetup.vue'),
     },
     {
       path: "/dashboard",
       name: "dashboard",
       component: () =>
-        import('/src/components/Login/DashBoardView.vue'),
+        import('/src/components/Login/CurrentUserLog.vue'),
       meta: {
         authRequired: true,
       },
