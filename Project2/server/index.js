@@ -1,18 +1,10 @@
-// const express = require("express");
-// const connection = require("./MongoDBConnect");
-// const app = express();
-// app.listen(3000, () => {
-//   console.log("Listening at port 3000");
-// });
-
-
 const express = require('express')
 const app = express()
 
 const hostname = '127.0.0.1';
 const port = process.env.PORT || 3000;
 
-const user_controller = require('./controllers/users');
+const user_controller = require('./controllers/User.js');
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -28,9 +20,7 @@ app.use('/', express.static('./client/dist'));
 
 app.use(express.json());
 app.use('/api/v1/users', user_controller);
-// .use('/api/v1/WorkoutView', WorkoutViewController)
-// .use('/api/v1/cart', cartController)
-// .use('/api/v1/checkout', checkoutController)
+
 
 app.get('*', (req, res) => {
     

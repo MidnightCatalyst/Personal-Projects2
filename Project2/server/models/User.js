@@ -1,4 +1,4 @@
-const { connect } = require('./mongo');
+const { connect } = require('./mongoDBConnection.js');
 const bcrypt = require('bcrypt');
 
 const DATABASE = 'Account_Database';
