@@ -1,8 +1,8 @@
 <script setup lang="ts">
     import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
-    import DashboardView from './Login/DashBoardView.vue';
-    import LoginView from './Login/LoginView.vue';
+    import DashboardView from './Login/CurrentUserLog.vue';
+    import LoginView from './Login/LoginSetup.vue';
     
 
     let isActive = ref(false);
