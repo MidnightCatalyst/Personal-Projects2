@@ -36,12 +36,12 @@ Content-Type: application/json
 }
 
 ### login
-POST http://127.0.0.1:3003/api/v1/users/login
+POST http://127.0.0.1:3000/api/v1/users/login
 Content-Type: application/json
 
 {
-    "username": "Welcome",
-    "password": "Welcome"
+    "username": "hello",
+    "password": "hello"
 }
 
 ### add workout

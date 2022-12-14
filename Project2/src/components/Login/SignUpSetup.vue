@@ -1,14 +1,31 @@
+<script setup lang="ts">
+import { reactive } from "vue";
+import { register } from "@/stores/session";
+
+async function submit() {
+  try {
+    await register(form.username, form.password);
+  } catch (error) {
+    console.log(error);
+  }
+}
+const form = reactive({
+  username: "",
+  password: "",
+});
+</script>
 <template>
     <div class="container">
-      <form @submit.prevent="register">
+      <form @submit.prevent="submit()">
         <h2 class="mb-3">Register</h2>
         <div class="input">
-          <label for="email">Email address</label>
+          <label for="email">Username</label>
           <input
             class="form-control"
             type="text"
             name="email"
-            placeholder="Generated@gmail.com"
+            placeholder="Generated"
+            v-model="form.username"
           />
         </div>
         <div class="input">
@@ -17,12 +34,14 @@
             class="form-control"
             type="password"
             name="password"
-            placeholder="kiki34"
+            placeholder="kiki34" 
+            v-model="form.password"
+
           />
         </div>
   
         <div class="alternative-option mt-4">
-          Have an account? <span @click="moveToLogin">Login</span>
+          Have an account? <router-link to="/Login">Log In</router-link>
         </div>
   
         <button type="submit" id="register_button" class="mt-4 btn-pers">
@@ -38,7 +57,7 @@
     </div>
   </template>
   
-  <script>
+  <!-- <script>
   import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
   
   export default {
@@ -79,6 +98,6 @@
       },
     },
   };
-  </script>
+  </script> -->
 
   

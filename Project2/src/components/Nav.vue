@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
-    import DashboardView from './Login/CurrentUserLog.vue';
+    import session from "../stores/session";
     import LoginView from './Login/LoginSetup.vue';
     
 
@@ -49,10 +49,10 @@
 
 
           
-            <router-link class="display-6" to="/dashboard">
-              <div class = input id = "username_display"> Hello User</div>
+            
+              <h1>Currently Logged In As: {{session.user?.username}}</h1>
 
-            </router-link>
+            
 
 
 

@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 
 
-app.use('/', express.static('./client/dist'));
+app.use('/', express.static('./dist'));
 
 app.use(express.json());
 app.use('/api/v1/users', user_controller);
