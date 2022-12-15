@@ -2,6 +2,8 @@
 
 
 import Comments from '/src/components/PostSystem/ChatLog.vue'
+
+
 export default {
   name: 'app',
   components: {
@@ -99,6 +101,7 @@ export default {
   </div>
 
 </div>
+
 </template>
 
 <style>

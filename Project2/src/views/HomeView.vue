@@ -20,9 +20,24 @@ import Activity from "../components/Activity/Activity.vue"
     <Activity />    
   </main>
  
+  
 
 
-
+  <div id="app">
+    <SearchAutocomplete
+      :items="[
+        'Apple',
+        'Banana',
+        'Orange',
+        'Mango',
+        'Pear',
+        'Peach',
+        'Grape',
+        'Tangerine',
+        'Pineapple'
+      ]"
+    />
+  </div>
 
 
 </template>

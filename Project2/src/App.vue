@@ -4,6 +4,8 @@ import NavVue from './components/Nav.vue'
 
 
 
+
+
 </script>
 
 <template>
@@ -17,6 +19,8 @@ import NavVue from './components/Nav.vue'
     
     <RouterView />
   </div>
+
+
 
 
 

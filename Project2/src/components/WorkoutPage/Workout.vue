@@ -1,3 +1,32 @@
+<script lang = "ts">
+import { defineComponent } from 'vue';
+
+
+export default defineComponent({
+  name: "Leaderboard",
+  data: () => ({ type: "", sets: "", reps: "", allScores: [] as any[] }),
+  computed: {
+    sortedList: function() {
+      return this.allScores.slice().sort(function(a, b) {
+        return b.score - a.score;
+      });
+    },
+  },
+  methods: {
+    onSubmit() {
+      this.allScores.push({ type: this.type, sets: this.sets, reps: this.reps });
+      this.clearForm();
+    },
+    clearForm() {
+      this.type = "";
+      this.sets = "";
+      this.reps = "";
+    },
+  },
+});
+</script>
+
+
 
 <template>
   <div class="container">
@@ -53,32 +82,8 @@
       </tbody>
     </table>
   </div>
+
+
+
 </template>
-
-<script lang = "ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: "Leaderboard",
-  data: () => ({ type: "", sets: "", reps: "", allScores: [] as any[] }),
-  computed: {
-    sortedList: function() {
-      return this.allScores.slice().sort(function(a, b) {
-        return b.score - a.score;
-      });
-    },
-  },
-  methods: {
-    onSubmit() {
-      this.allScores.push({ type: this.type, sets: this.sets, reps: this.reps });
-      this.clearForm();
-    },
-    clearForm() {
-      this.type = "";
-      this.sets = "";
-      this.reps = "";
-    },
-  },
-});
-</script>
 

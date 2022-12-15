@@ -1,10 +1,12 @@
-<script setup lang="ts">
+<script setup lang = "ts">
 import Workout from "../components/WorkoutPage/Workout.vue"
+import SearchAutocomplete from "../components/DropDownAuto/SearchAutocomplete.vue"
 
 
 </script>
 
 <template>
+
 
 <div>
     <article class="panel is-info">
@@ -25,7 +27,26 @@ import Workout from "../components/WorkoutPage/Workout.vue"
   <main>
     <Workout />
   </main>
-
+  <div>
+    <h1>My AutoComplete DropDown Box For Types Of Workouts</h1>
+    <SearchAutocomplete
+      :items="[
+        'Pushups',
+        'Dips',
+        'Overhead Dumbell Press',
+        'Pullups',
+        'Bench Press',
+        'Squats',
+        'Deadlifts',
+        'Barbell Rows',
+        'Curls',
+        'Tricep Extensions',
+        'Barbell Curls',
+        'Lat Pull Down',
+        'Deltoid Side Lifts'
+      ]"
+    />
+  </div>
   <div>
     <article class="panel is-info">
   <p class="panel-heading">
